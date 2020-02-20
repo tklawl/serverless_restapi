@@ -26,7 +26,7 @@ module.exports.getHello = (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: `<h1> This is a lambda function. The current date and time (in us-east-1): ${datetime} </h1> <br> <p> HTML & CSS work perfectly fine!</p> <br> <table style=\"padding: 3px;\">
+      message: `<h1> This is a lambda function. The current date and time (in us-east-1): ${datetime} </h1> <br> <p> HTML & CSS work perfectly fine!</p> <hr> <table style=\"padding: 3px;\">
       <tr style=\"padding: 3px;\">
         <th style=\"padding: 3px;\">Firstname</th>
         <th style=\"padding: 3px;\">Lastname</th>
