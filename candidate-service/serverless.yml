@@ -1,0 +1,19 @@
+service: serverless-restapi
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  getDefault:
+    handler: api/handler.getHello
+    memorySize: 128
+    description: Get a response from the server
+    events:
+      - http:
+          path: getHello
+          method: get
